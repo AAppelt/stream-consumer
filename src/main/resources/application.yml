@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          #destination: usuario-stream
+          destination: demo
+      kafka:
+        binder:
+          brokers: 
+          - ec2-18-231-74-189.sa-east-1.compute.amazonaws.com:9092
+
+  mail:    
+    host: smtp.empsis.com.br
+    username: hardware@empsis.com.br
+    password: trufa@20
+    port: 587
+    protocol: smtp
+    test-connection: true
+    default-encoding: UTF-8
+    #properties:
+      #mail.smtp.auth: true
+      #mail.smtp.starttls.enable: true
+      #mail.smtp.starttls.required: true
+      #mail.smtp.ssl.enable: true
+      
